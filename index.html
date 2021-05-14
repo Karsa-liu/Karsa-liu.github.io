@@ -146,6 +146,180 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/14/basis/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="Karsa">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Karsa的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/14/basis/" class="post-title-link" itemprop="url">Java 变量于常量</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-05-14 09:05:22 / 修改时间：20:13:48" itemprop="dateCreated datePublished" datetime="2021-05-14T09:05:22+08:00">2021-05-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Java-常量与变量"><a href="#Java-常量与变量" class="headerlink" title="Java 常量与变量"></a>Java 常量与变量</h1><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><ul>
+<li>标识符可以由字母、数字、下划线和美元符组成，不能由数字开头</li>
+<li>标识符严格区分大小写</li>
+<li>标识符不能是java关键词和保留字</li>
+<li>标识符的命名最好能反应出起作用 </li>
+</ul>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
+<li>什么是变量:变量是程序中数据临时存储</li>
+<li>变量的三元素: 变量类型、变量名、变量值</li>
+</ul>
+<h3 id="变量的命名规则"><a href="#变量的命名规则" class="headerlink" title="变量的命名规则"></a>变量的命名规则</h3><ul>
+<li>满足便是符命名规则</li>
+<li>符合驼峰法命名规则</li>
+<li>尽量简单、做到见名知意</li>
+<li>变量名的长度没有限制</li>
+</ul>
+<h3 id="类的命名规则"><a href="#类的命名规则" class="headerlink" title="类的命名规则"></a>类的命名规则</h3><ul>
+<li>满足Pascal命名法规范（组成类名的命名首字母必须大写）</li>
+</ul>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
+<li>基本数据类型<ul>
+<li>数值型(int、long float、double)</li>
+<li>字符型(char)</li>
+<li>布尔型(boolean)</li>
+</ul>
+</li>
+<li>引用数据类型<ul>
+<li>类(class)</li>
+<li>接口(interface)</li>
+<li>数组</li>
+</ul>
+</li>
+</ul>
+<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th align="center">说明</th>
+<th align="center">字节</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">byte</td>
+<td align="center">字节型</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">短整型</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">整型</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">长整型</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">单精度浮点型</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">双精度浮点型</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center">字符型</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">布尔型</td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<h2 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h2><ul>
+<li>格式: 数据类型 变量名;</li>
+</ul>
+<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2><ul>
+<li>使用“=”运算符进行赋值</li>
+<li>“=” 叫做赋值运算符，将运算符右边的值副歌左边的变量</li>
+<li>可以在定义变量的同时给变量赋值，即变量的初始化(int n=3;)</li>
+</ul>
+<h2 id="基本数据类型变量的存储"><a href="#基本数据类型变量的存储" class="headerlink" title="基本数据类型变量的存储"></a>基本数据类型变量的存储</h2><ul>
+<li>按照作用范围分为：类级、对象实力级、方法级、块级</li>
+</ul>
+<h2 id="字面值-常量"><a href="#字面值-常量" class="headerlink" title="字面值(常量)"></a>字面值(常量)</h2><ul>
+<li>字符型字面值用单引号内的单个字符表示。(‘a’、’b’、’&amp;’)</li>
+<li>定义字符型变量 (char a= ‘a’;)</li>
+<li>char ch = 65; (输出ASCII码 A )</li>
+<li>布尔类型的字面值只能定义成true和false </li>
+<li>字符串不属于基本数据类型是对象(双引号引起来的0或多个字符)</li>
+</ul>
+<h2 id="ASCII编码与Unicode编码"><a href="#ASCII编码与Unicode编码" class="headerlink" title="ASCII编码与Unicode编码"></a>ASCII编码与Unicode编码</h2><ul>
+<li>ASCII码是美国标准的信息交换码</li>
+<li>ASCII码不能支持所有语言</li>
+<li>Unicode编码又称为万国码</li>
+<li>Unicode编码的目标是支持世界上所有的字符集</li>
+</ul>
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><ul>
+<li>分为自动类型转换和强制类型转换</li>
+<li>自动(long n = 263;)</li>
+<li>强制(char ch = (char)65536;)可能引起数据丢失</li>
+<li>如果A类型的数据表示范围比B类型大，则将A类型的值赋值给B类型，需要强制类型转换</li>
+<li>强制数据类型转换格式:(数据类型)数值</li>
+</ul>
+<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><ul>
+<li>命名规则：final (类型) (值) 值通常大写字母表示</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/14/%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -675,186 +849,6 @@
 <p>SELECT 子查询:每输出一条记录就要执行一次，查询效率很低</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">e.empno,e.ename,</span><br><span class="line">       (<span class="keyword">SELECT</span> dname <span class="keyword">FROM</span> t_dept <span class="keyword">WHERE</span> deptno <span class="operator">=</span> e.deptno)</span><br><span class="line"><span class="keyword">FROM</span> t_emp e;</span><br></pre></td></tr></table></figure>
 <p>单行子查询和多行子查询<br>WHERE子句中，可以使用IN,ALL,ANY,EXISTS关键字来处理多行表达式结果集的条件判断</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/13/basis/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/2.jpg">
-      <meta itemprop="name" content="Karsa">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Karsa的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/13/basis/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-13 23:18:01" itemprop="dateCreated datePublished" datetime="2021-05-13T23:18:01+08:00">2021-05-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-14 20:11:28" itemprop="dateModified" datetime="2021-05-14T20:11:28+08:00">2021-05-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Java-常量与变量"><a href="#Java-常量与变量" class="headerlink" title="Java 常量与变量"></a>Java 常量与变量</h1><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><ul>
-<li>标识符可以由字母、数字、下划线和美元符组成，不能由数字开头</li>
-<li>标识符严格区分大小写</li>
-<li>标识符不能是java关键词和保留字</li>
-<li>标识符的命名最好能反应出起作用 </li>
-</ul>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
-<li>什么是变量:变量是程序中数据临时存储</li>
-<li>变量的三元素: 变量类型、变量名、变量值</li>
-</ul>
-<h3 id="变量的命名规则"><a href="#变量的命名规则" class="headerlink" title="变量的命名规则"></a>变量的命名规则</h3><ul>
-<li>满足便是符命名规则</li>
-<li>符合驼峰法命名规则</li>
-<li>尽量简单、做到见名知意</li>
-<li>变量名的长度没有限制</li>
-</ul>
-<h3 id="类的命名规则"><a href="#类的命名规则" class="headerlink" title="类的命名规则"></a>类的命名规则</h3><ul>
-<li>满足Pascal命名法规范（组成类名的命名首字母必须大写）</li>
-</ul>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
-<li>基本数据类型<ul>
-<li>数值型(int、long float、double)</li>
-<li>字符型(char)</li>
-<li>布尔型(boolean)</li>
-</ul>
-</li>
-<li>引用数据类型<ul>
-<li>类(class)</li>
-<li>接口(interface)</li>
-<li>数组</li>
-</ul>
-</li>
-</ul>
-<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><table>
-<thead>
-<tr>
-<th align="center">数据类型</th>
-<th align="center">说明</th>
-<th align="center">字节</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">byte</td>
-<td align="center">字节型</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">short</td>
-<td align="center">短整型</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center">整型</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">长整型</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="center">float</td>
-<td align="center">单精度浮点型</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">double</td>
-<td align="center">双精度浮点型</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="center">char</td>
-<td align="center">字符型</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">boolean</td>
-<td align="center">布尔型</td>
-<td align="center">1</td>
-</tr>
-</tbody></table>
-<h2 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h2><ul>
-<li>格式: 数据类型 变量名;</li>
-</ul>
-<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2><ul>
-<li>使用“=”运算符进行赋值</li>
-<li>“=” 叫做赋值运算符，将运算符右边的值副歌左边的变量</li>
-<li>可以在定义变量的同时给变量赋值，即变量的初始化(int n=3;)</li>
-</ul>
-<h2 id="基本数据类型变量的存储"><a href="#基本数据类型变量的存储" class="headerlink" title="基本数据类型变量的存储"></a>基本数据类型变量的存储</h2><ul>
-<li>按照作用范围分为：类级、对象实力级、方法级、块级</li>
-</ul>
-<h2 id="字面值-常量"><a href="#字面值-常量" class="headerlink" title="字面值(常量)"></a>字面值(常量)</h2><ul>
-<li>字符型字面值用单引号内的单个字符表示。(‘a’、’b’、’&amp;’)</li>
-<li>定义字符型变量 (char a= ‘a’;)</li>
-<li>char ch = 65; (输出ASCII码 A )</li>
-<li>布尔类型的字面值只能定义成true和false </li>
-<li>字符串不属于基本数据类型是对象(双引号引起来的0或多个字符)</li>
-</ul>
-<h2 id="ASCII编码与Unicode编码"><a href="#ASCII编码与Unicode编码" class="headerlink" title="ASCII编码与Unicode编码"></a>ASCII编码与Unicode编码</h2><ul>
-<li>ASCII码是美国标准的信息交换码</li>
-<li>ASCII码不能支持所有语言</li>
-<li>Unicode编码又称为万国码</li>
-<li>Unicode编码的目标是支持世界上所有的字符集</li>
-</ul>
-<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><ul>
-<li>分为自动类型转换和强制类型转换</li>
-<li>自动(long n = 263;)</li>
-<li>强制(char ch = (char)65536;)可能引起数据丢失</li>
-<li>如果A类型的数据表示范围比B类型大，则将A类型的值赋值给B类型，需要强制类型转换</li>
-<li>强制数据类型转换格式:(数据类型)数值</li>
-</ul>
-<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><ul>
-<li>命名规则：final (类型) (值) 值通常大写字母表示</li>
-</ul>
 
       
     </div>
