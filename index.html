@@ -151,6 +151,156 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/03/java%E7%BB%A7%E6%89%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpg">
+      <meta itemprop="name" content="Karsa">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Karsa的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/03/java%E7%BB%A7%E6%89%BF/" class="post-title-link" itemprop="url">java继承</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-03 19:06:00 / 修改时间：19:07:00" itemprop="dateCreated datePublished" datetime="2021-06-03T19:06:00+08:00">2021-06-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="继承（程序中的继承）"><a href="#继承（程序中的继承）" class="headerlink" title="继承（程序中的继承）"></a>继承（程序中的继承）</h1><ul>
+<li>假设动物类成员属性（品种，名字，月份）等为公共父类。</li>
+<li>同样方法也可以设置共性（吃、跑、）</li>
+</ul>
+<h1 id="继承（单一继承，只能继承一个父类）"><a href="#继承（单一继承，只能继承一个父类）" class="headerlink" title="继承（单一继承，只能继承一个父类）"></a>继承（单一继承，只能继承一个父类）</h1><ul>
+<li>一种类与类之间的关系</li>
+<li>使用已存在的类（父类或基类）定义作为基础建立新类（子类或派生类）</li>
+<li>新类的定义中可以增加新的数据和新的功能，也可以用父类的功能，但不能选择性的继承父类</li>
+</ul>
+<h2 id="继承的关系"><a href="#继承的关系" class="headerlink" title="继承的关系"></a>继承的关系</h2><ul>
+<li>满足”A is a B”的关系就可以形成继承的类（猫和狗继承自动物类）</li>
+</ul>
+<h2 id="继承的实现"><a href="#继承的实现" class="headerlink" title="继承的实现"></a>继承的实现</h2><ul>
+<li><p>extends关键词实现</p>
+</li>
+<li><ol>
+<li>编写父类 class Animal{ 公共的属性和方法 }</li>
+<li>编写自雷，继承父类<br>class Dog extends Animal{ 子类特有的属性和方法 }</li>
+</ol>
+</li>
+<li><p>单继承（一个子类只有唯一的父类）</p>
+</li>
+<li><p>子类可以访问父类的非私有成员，父类不可以访问子类特有成员。</p>
+</li>
+</ul>
+<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><ul>
+<li>在子类中定义</li>
+<li>方法名（与父类一致）</li>
+<li>参数类型，顺序，个数（与父类完全一致）</li>
+<li>注意：当子类重写父类方法后，子类对象调用的是重写后的方法。</li>
+</ul>
+<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><ul>
+<li>公有的：public</li>
+<li>私有的：private</li>
+<li>受保护的：protected</li>
+<li>默认</li>
+</ul>
+<h2 id="super关键词"><a href="#super关键词" class="headerlink" title="super关键词"></a>super关键词</h2><p>super ：父类对象的引用</p>
+<ul>
+<li>代表父类应用</li>
+</ul>
+<ol>
+<li>访问父类成员方法  super.print();</li>
+<li>访问父类属性  super.name;</li>
+<li>访问父类构造方法 super();</li>
+</ol>
+<ul>
+<li>子类的构造的过程中必须调用其父类的构造方法</li>
+<li>如果子类的构造方法中没有显式标注，则系统默认调用父类的无参构造方法</li>
+<li>如果子类构造方法中既没有显式标注，且父类中没有无参的构造方法，则编译出错</li>
+<li>使用super调用父类指定构造方法，必须在子类的构造方法的第一行</li>
+</ul>
+<h2 id="super和this（构造方法调用时，this和super不能同时使用）"><a href="#super和this（构造方法调用时，this和super不能同时使用）" class="headerlink" title="super和this（构造方法调用时，this和super不能同时使用）"></a>super和this（构造方法调用时，this和super不能同时使用）</h2><ul>
+<li>this<ol>
+<li>访问当前类的成员方法</li>
+<li>访问当前类的成员属性</li>
+<li>访问当前类的构造方法</li>
+<li>不能在静态方法中使用</li>
+</ol>
+</li>
+<li>super </li>
+</ul>
+<ol>
+<li>访问父类的成员方法</li>
+<li>访问父类的成员属性</li>
+<li>访问父类的构造方法</li>
+<li>不能在静态方法中使用</li>
+</ol>
+<h2 id="继承后的初始化顺序"><a href="#继承后的初始化顺序" class="headerlink" title="继承后的初始化顺序"></a>继承后的初始化顺序</h2><p>父类静态成员–子类静态成员–父类对象构造–子类对象构造</p>
+<h2 id="方法重写-1"><a href="#方法重写-1" class="headerlink" title="方法重写"></a>方法重写</h2><ul>
+<li>在满足继承关系的子类中</li>
+<li>方法名、参数列表与父类相同</li>
+<li>返回值小于等于父类（即可以是子类）</li>
+<li>访问修饰符的限定范围大于等于父类方法</li>
+</ul>
+<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><ul>
+<li>在同一个类中</li>
+<li>方法名相同</li>
+<li>参数个数、书序、类型不同</li>
+<li>返回值类型、访问修饰符任意</li>
+</ul>
+<h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2><ul>
+<li>Object类是所有类的父类</li>
+<li>一个类没有使用extends关键字明确表示继承关系，则默认继承Object类（包括数组）</li>
+<li>java中的每个类都可以使用Object中定义的方法</li>
+</ul>
+<h2 id="final（不能用来修饰构造方法）"><a href="#final（不能用来修饰构造方法）" class="headerlink" title="final（不能用来修饰构造方法）"></a>final（不能用来修饰构造方法）</h2><ul>
+<li>final Class:该类没有子类</li>
+<li>final 方法：该方法不允许被子类重写，但可以正常被子类继承使用</li>
+<li>final 修饰方法中的局部变量时，只要在具体被使用之前进行赋值即可，一旦赋值不允许被修改</li>
+<li>final 类中成员属性:1、定义时候初始化 2、在构造代码块或构造方法中能进行初始化操作</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/03/object/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1311,7 +1461,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
